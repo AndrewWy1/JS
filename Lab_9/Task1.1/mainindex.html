@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення меблів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="mainForm" action="#" method="get" enctype="multipart/form-data">
+        <select name="furniture">
+            <option value="wardrobe">Шафа</option>
+            <option value="table">Стіл</option>
+            <option value="sideboard">Сервант</option>
+            <option value="nightstand">Тумба</option>
+            <option value="bed">Ліжко</option>
+            <option value="chair">Стілець</option>
+        </select>
+
+        <select name="material">
+            <option value="Oak">Дуб</option>
+            <option value="nutTree">Горіх</option>
+            <option value="beech">Бук</option>
+            <option value="maple">Клен</option>
+            <option value="cherryTree">Вишня</option>
+            <option value="merbau">Мербау</option>
+        </select>
+
+        <input type="number" name="numbers" onchange="checknum()">
+        <button name="SUBMIT" type="submit">Order</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

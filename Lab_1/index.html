@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Практична робота_01-JS02</title>
+</head>
+
+<body>
+    <button id="createButton" value="Кнопка вітання">Привітати СВІТ</button>
+    <button id="delButton" value="Кнопка вітання">Стерти привітання</button>
+    <script>
+        const delButton = document.getElementById("delButton");
+        const createButton = document.getElementById("createButton");
+
+        delButton.style.display = "none";
+
+        delButton.onclick = delFunction;
+        createButton.onclick = createFunction;
+
+        function createFunction() {      
+            createButton.style.display = "none";
+            delButton.style.display = "inline-block"
+            var h1 = document.createElement('h1');
+            h1.className = "big";
+            h1.id = "big";
+            document.body.appendChild(h1);
+            h1.appendChild(document.createTextNode("Я ВІТАЮ ТЕБЕ СВІТ!!!"));
+            document.getElementsByTagName("h1")[0].style.color = "red";
+            document.getElementById("big").style.fontSize = "4em";
+            document.getElementById("big").style.textAlign = "center";
+        }
+
+        function delFunction(){
+            delButton.style.display = "none";
+            createButton.style.display = "inline-block";
+            document.getElementById("big").remove();
+        }
+    </script>
+</body>
+
+</html>

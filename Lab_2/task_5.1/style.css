@@ -1,0 +1,30 @@
+.lamps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#bulb {
+    height: 200px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.button {
+    padding: 10px 20px;
+    border: #1D8348 3px solid;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+}
+.button:first-child{
+    background: #F1C40F;
+}
+.button:last-child{
+    background: #212F3C;
+    color: #fff;
+}

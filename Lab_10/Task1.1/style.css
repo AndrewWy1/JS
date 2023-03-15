@@ -1,0 +1,16 @@
+#BodyClick{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-direction: column;
+}
+#picture{
+    height: 200px;
+}
+
+#caption{
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+}

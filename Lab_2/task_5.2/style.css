@@ -1,0 +1,10 @@
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#traff_light {
+    height: 200px;
+    cursor: pointer;
+}
