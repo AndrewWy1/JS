@@ -1,0 +1,6 @@
+<button (click)="toggleNextLanguage()">Змінити</button>
+<ul>
+    <li *ngFor="let language of languages; let i = index">
+        {{ language }}{{ currentToggleIndex === i ? '+' : '' }}
+    </li>
+</ul>

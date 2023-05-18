@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let country of countries | keyvalue">
+      {{ country.key }}:
+      <span *ngFor="let city of country.value">{{ city }} </span>
+    </li>
+  </ul>
